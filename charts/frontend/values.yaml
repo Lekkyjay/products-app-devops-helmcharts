@@ -1,0 +1,18 @@
+image:
+  repository: mk-pern-fe-img
+  tag: "3.0"
+replicaCount: 1
+
+ingress:
+  enabled: true
+  host: pern-app.local
+  annotations: {}
+
+env:
+  VITE_API_URL: "/api"
+  CONFIG_VAR: "CONFIG VAR from configmap"
+  CONFIG_VAR1: "CONFIG VAR 1"
+  CONFIG_VAR2: "CONFIG VAR 2"  
+
+configs:
+  name: frontend-configs
