@@ -1,6 +1,6 @@
 image:
-  repository: /products-app-devops-frontend
-  tag: "78fb94ac509e12e4566a20ee5ec33360ebff1e0c"
+  repository: lekky/products-app-devops-frontend
+  tag: "683ac82efa3d9426f0b091983eca8edd0bc50a15"
 replicaCount: 1
 ingress:
   enabled: true
