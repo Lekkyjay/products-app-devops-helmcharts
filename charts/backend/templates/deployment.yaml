@@ -16,7 +16,7 @@ spec:
       containers:
       - name: {{ .Release.Name }}-c
         image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
-        imagePullPolicy: Never
+        imagePullPolicy: IfNotPresent
         env:
         - name: "DATABASE_URL"
           valueFrom:
