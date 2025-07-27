@@ -1,18 +1,14 @@
 image:
-  repository: mk-pern-be-img
-  tag: "1.0"
+  repository: lekky/products-app-devops-backend
+  tag: "8bde39ba62fccffa43ccef83affb1219a14af8af"
 replicaCount: 2
-
 ingress:
   enabled: true
   host: pern-app.local
   annotations: {}
-
 env:
   PORT: 5000
-
 secrets:
   DATABASE_URL: "superecretpw"
-
 configs:
   port: 5000
